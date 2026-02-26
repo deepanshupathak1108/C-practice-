@@ -1,16 +1,26 @@
 #include<stdio.h>
 int main(){
-    int num, power, result=1 , i ;
+    int num, power, result = 1;
+    int i;
     printf("Enter the base number: ");
-scanf("%d", &num);
-printf("enter the power:");
-scanf("%d",&power);
+    scanf("%d", &num);
 
-for(int i=1; i<=power; i++){
+    printf("Enter the power: ");
+    scanf("%d", &power);
 
-    result= num*result;
+    for(int i = 1; i <= power; i++){
+        result = result * num;
+    }
 
+    printf("%d to the power of %d is %d", num, power, result);
+
+    return 0;
 }
-printf("%d to the power of %d is %d", num, power, result);
-return 0;
-}
+
+
+
+
+
+
+
+
