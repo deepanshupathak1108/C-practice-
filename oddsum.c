@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 
 int main() {
@@ -18,3 +19,25 @@ int main() {
 
     return 0;
 }
+=======
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    printf("First %d Even numbers:\n", n);
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", i * 2);
+    }
+
+    printf("\n\nFirst %d Odd numbers:\n", n);
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", (i * 2) - 1);
+    }
+
+    return 0;
+}
+>>>>>>> a9d5c964e135e9e04b89ec9859559b4faff5e0a3
